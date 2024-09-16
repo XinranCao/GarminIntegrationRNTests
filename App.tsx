@@ -1,9 +1,7 @@
 import {SafeAreaView, ScrollView, useColorScheme, View} from 'react-native';
-
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import BluetoothComm from './components/BluetoothComm';
-import GarminConnectSDK from './components/GarminConnectSDK';
 import AppleHealthKit from './components/AppleHealthKit';
+import GarminHealthAPI from './components/GarminHealthAPI';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -21,9 +19,8 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <BluetoothComm />
-          <GarminConnectSDK />
           <AppleHealthKit />
+          <GarminHealthAPI />
         </View>
       </ScrollView>
     </SafeAreaView>

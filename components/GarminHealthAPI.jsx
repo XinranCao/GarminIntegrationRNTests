@@ -1,9 +1,9 @@
 import {Text, View, StyleSheet} from 'react-native';
 
-const GarminConnectSDK = () => {
+const GarminHealthAPI = () => {
   return (
     <View style={styles.sectionContainer}>
-      <Text style={styles.title}>2. Garmin Connect SDK</Text>
+      <Text style={styles.title}>2. Garmin Health API</Text>
     </View>
   );
 };
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GarminConnectSDK;
+export default GarminHealthAPI;
